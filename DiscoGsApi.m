@@ -102,7 +102,7 @@ NSString *  _apiClient  = @"DoctorTunes";
 
 
 #pragma mark - Image
-- (NSImage *) GetImage:(NSString *)imagepath{
+- (UIImage *) GetImage:(NSString *)imagepath{
     
     NSString *url = imagepath;
     NSLog(@"GetImage: %@",url);
@@ -129,7 +129,7 @@ NSString *  _apiClient  = @"DoctorTunes";
         return nil;
     }
     
-    NSImage *img = [[[NSImage alloc] initWithData:data] autorelease];
+    UIImage *img = [[[UIImage alloc] initWithData:data] autorelease];
     
     //caching
     [lastImageString release];

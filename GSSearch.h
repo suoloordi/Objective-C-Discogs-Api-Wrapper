@@ -22,6 +22,7 @@
 @property (readonly) NSMutableArray * exactresults;
 @property (readonly) NSString *version;
 
-
+- (id)initWithDictionary:(NSDictionary*)dictionary;
+    
 
 @end

@@ -22,7 +22,7 @@ extern NSString *   _apiClient;
     GSSearch *lastSearch;
     NSString *lastSearchString;
     
-    NSImage *lastImage;
+    UIImage *lastImage;
     NSString *lastImageString;
     
     NSDictionary *lastJson;
@@ -36,7 +36,7 @@ extern NSString *   _apiClient;
 - (GSSearch*)           SearchArtists:(NSString*)searchstring;
 - (GSSearch*)           SearchLabels:(NSString*)searchstring;
 
-- (NSImage *)           GetImage:(NSString *)imagepath;
+- (UIImage *)           GetImage:(NSString *)imagepath;
 
 - (GSRelease *)         GetRelease:(NSString *)releaseid;
 - (GSMasterRelease *)   GetMasterRelease:(NSString *)masterid;
